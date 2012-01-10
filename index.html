@@ -2,19 +2,30 @@
 <html>
 <head>
 <title>Kanban</title>
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
 </head>
 <body>
 <div id="kanban"></div>
 
 <script type="text/template" id="story-template">
+    st0ry
     <span><%= name %></span>
 </script>
-<script type="text/template" id="column-template"></script>
-<script type="text/template" id="board-template"></script>
+
+<script type="text/template" id="story-form-template"></script>
+
+<script type="text/template" id="column-template">
+    <div class="btn create">Add</div>
+</script>
+
+<script type="text/template" id="board-template">
+
+</script>
 
 <script src="vendor/jquery-1.7.1.min.js"></script>
 <script src="vendor/underscore-min.js"></script>
 <script src="vendor/backbone-min.js"></script>
+<script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-modal.js"></script>
 <script src="lib/kanban.js"></script>
 <script>
 $(function() {
