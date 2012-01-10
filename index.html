@@ -6,16 +6,18 @@
 <body>
 <div id="kanban"></div>
 
-<script type="text/template" id="story-template"></script>
+<script type="text/template" id="story-template">
+    <span><%= name %></span>
+</script>
 <script type="text/template" id="column-template"></script>
-<script type="text/template" id="board-template">_</script>
+<script type="text/template" id="board-template"></script>
 
 <script src="vendor/jquery-1.7.1.min.js"></script>
 <script src="vendor/underscore-min.js"></script>
 <script src="vendor/backbone-min.js"></script>
 <script src="lib/kanban.js"></script>
 <script>
-$(function(){
+$(function() {
     var kanban = new Kanban.views.Board;
 });
 </script>
